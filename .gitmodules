@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/remove_subject"]
+	path = sites/all/modules/remove_subject
+	url = https://github.com/tfmertz/remove-subject-module.git
