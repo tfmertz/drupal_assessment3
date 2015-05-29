@@ -1,0 +1,80 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+  font-size: 14px;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+#header {
+  background-color: #ccc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#site-slogan {
+  font-style: italic;
+}
+
+#user-login-form input {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 3px;
+}
+
+#edit-actions input {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius:4px;
+}
+
+#edit-author--2 {
+  display: none;
+}
+
+#block-block-1 p {
+  text-align: center;
+}
+
+#secondary-menu a {
+  font-weight: bold;
+  color: #909090;
+  text-decoration: none;
+  padding: 7px;
+  border: 2px solid #999;
+  border-radius: 5px;
+}
+
+#secondary-menu a:hover {
+  color: white;
+  background-color: #999;
+}
